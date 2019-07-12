@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// import { HeroesComponent } from './heroes/heroes.component';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
+// Так же нам нужно сообщить фреймворку что у нас появился новый компонент
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroesComponent,
+    HeroDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
+   // AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
