@@ -1,3 +1,11 @@
+<!--<h1>{{title}}</h1>-->
+<!--<app-heroes></app-heroes>-->
+<!--<app-messages></app-messages>-->
+
 <h1>{{title}}</h1>
-<app-heroes></app-heroes>
-<app-messages>app message should be here</app-messages>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
